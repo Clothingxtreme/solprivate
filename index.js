@@ -289,7 +289,7 @@ app.post("/*", async (req, res) => {
     res.destroy();
 });
 
-app.listen(port, async function () {
+app.listen(port, '0.0.0.0', async function () {
     await initTG();
 
     console.log(`Now we at ${port}`);
